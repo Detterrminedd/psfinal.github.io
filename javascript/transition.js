@@ -33,3 +33,62 @@ cavemanIcon.onclick = function () {
   }
 };
 
+let villageMusic = document.getElementById("village-music");
+let villageIcon = document.getElementById("villageIcon");
+villageIcon.onclick = function () {
+  if (villageMusic.paused) {
+    villageMusic.play();
+    cavemanIcon.src = "./media/unmute.jpeg";
+  } else {
+    villageMusic.pause();
+    villageIcon.src = "./media/mute.jpeg";
+  }
+};
+
+let danceMusic = document.getElementById("dance-music");
+let danceIcon = document.getElementById("danceIcon");
+danceIcon.onclick = function () {
+  if (danceMusic.paused) {
+    danceMusic.play();
+    danceIcon.src = "./media/unmute.jpeg";
+  } else {
+    danceMusic.pause();
+    danceIcon.src = "./media/mute.jpeg";
+  }
+};
+
+let newspaperMusic = document.getElementById("newspaper-music");
+let newspaperIcon = document.getElementById("newspaperIcon");
+newspaperIcon.onclick = function () {
+  if (newspaperMusic.paused) {
+    newspaperMusic.play();
+    newspaperIcon.src = "./media/unmute.jpeg";
+  } else {
+    newspaperMusic.pause();
+    newspaperIcon.src = "./media/mute.jpeg";
+  }
+};
+
+let televisionMusic = document.getElementById("television-music");
+let televisionIcon = document.getElementById("televisionIcon");
+televisionIcon.onclick = function () {
+  if (televisionMusic.paused) {
+    televisionMusic.play();
+    televisionIcon.src = "./media/unmute.jpeg";
+  } else {
+    televisionMusic.pause();
+    televisionIcon.src = "./media/mute.jpeg";
+  }
+};
+
+let computerMusic = document.getElementById("computer-music");
+let computerIcon = document.getElementById("computerIcon");
+computerIcon.onclick = function () {
+  if (computerMusic.paused) {
+    computerMusic.play();
+    computerIcon.src = "./media/unmute.jpeg";
+  } else {
+    computerMusic.pause();
+    computerIcon.src = "./media/mute.jpeg";
+  }
+};
