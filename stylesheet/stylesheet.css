@@ -1,5 +1,22 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mute {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  cursor: pointer;
+}
+
 .bg-colored {
   color: aliceblue;
   width: -webkit-fit-content;
@@ -18,11 +35,11 @@
   text-align: left;
   font-size: 1em;
   background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Kaushan Script", cursive;
 }
 
 .bg-colored:before {
   font-size: 1.8rem;
-  letter-spacing: 0.1em;
   content: "Comic Book approach to personal Branding.";
 }
 
@@ -44,59 +61,90 @@
   }
 }
 
+@media (max-width: 480px) {
+  .bg-colored:before {
+    font-size: 1rem;
+  }
+}
+
 .bg-colored-village {
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .bg-colored-village:before {
   font-size: 1.8rem;
-  letter-spacing: 0.1em;
   content: "Story Telling is the one of the best understood medium.";
 }
 
+@media (max-width: 480px) {
+  .bg-colored-village:before {
+    font-size: 1rem;
+  }
+}
+
 .bg-colored-dance {
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .bg-colored-dance:before {
   font-size: 1.8rem;
-  letter-spacing: 0.1em;
   content: "Illustrated websites are the New emerging trend on websites";
 }
 
+@media (max-width: 480px) {
+  .bg-colored-dance:before {
+    font-size: 1rem;
+  }
+}
+
 .bg-colored-newspaper {
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .bg-colored-newspaper:before {
   font-size: 1.8rem;
-  letter-spacing: 0.1em;
   content: "Keep your audience engaged... wanting for more";
 }
 
+@media (max-width: 480px) {
+  .bg-colored-newspaper:before {
+    font-size: 1rem;
+  }
+}
+
 .bg-colored-television {
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .bg-colored-television:before {
   font-size: 1.8rem;
-  letter-spacing: 0.1em;
   content: "Bringing your stories to your audience..";
 }
 
+@media (max-width: 480px) {
+  .bg-colored-television:before {
+    font-size: 1rem;
+  }
+}
+
 .bg-colored-computer {
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .bg-colored-computer:before {
   font-size: 1.8rem;
-  letter-spacing: 0.1em;
   content: "Share your stories with influencers, bloggers and nomads";
+}
+
+@media (max-width: 480px) {
+  .bg-colored-computer:before {
+    font-size: 1rem;
+  }
 }
 
 .showup {
@@ -111,12 +159,6 @@
   width: 0px;
   -webkit-animation: reveal 14s 1;
           animation: reveal 14s 1;
-}
-
-.spann {
-  margin-left: -355px;
-  -webkit-animation: slidein 12s 1;
-          animation: slidein 12s 1;
 }
 
 @-webkit-keyframes showup {
@@ -221,15 +263,8 @@
   }
 }
 
-* {
-  padding: 0%;
-  margin: 0%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .caveman {
-  background: url(../assets/images/caveman.png);
+  background: url(../assets/desktop/caveman.png);
   background-position: center 30%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,23 +272,164 @@
   height: 100vh;
 }
 
-.title {
+@media (max-width: 480px) {
+  .caveman {
+    background: url(../assets/mobile/caveman1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.caveman .bird {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 83%;
+}
+
+@media (max-width: 480px) {
+  .caveman .bird {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 100%;
+    width: 85%;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .caveman .bird {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 100%;
+    width: 85%;
+    z-index: 1;
+  }
+}
+
+.caveman .title {
   position: absolute;
   top: 14%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 30em;
-  z-index: 999;
+  width: 47%;
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .caveman .title {
+    width: 65%;
+    top: 20%;
+  }
+}
+
+.branch {
+  opacity: 0;
+}
+
+@media (max-width: 480px) {
+  .branch {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 30%;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .branch {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 30%;
+    opacity: 1;
+  }
+}
+
+.branchtop {
+  opacity: 0;
+}
+
+@media (max-width: 480px) {
+  .branchtop {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 60%;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .branchtop {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    opacity: 1;
+  }
+}
+
+.nest {
+  opacity: 0;
+}
+
+@media (max-width: 480px) {
+  .nest {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    width: 30%;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .nest {
+    position: absolute;
+    top: 23%;
+    right: 0%;
+    width: 30%;
+    opacity: 1;
+  }
 }
 
 .village {
-  background: url(../assets/images/village.png);
+  background: url(../assets/desktop/village.png);
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .village {
+    background: url(../assets/mobile/village.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .village {
+    background: url(../assets/desktop/village.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .fadeInUp {
@@ -262,7 +438,7 @@
 }
 
 .dance {
-  background: url(../assets/images/dance.png);
+  background: url(../assets/desktop/dance.png);
   background-position: center 40%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,8 +446,19 @@
   height: 100vh;
 }
 
+@media (max-width: 480px) {
+  .dance {
+    background: url(../assets/mobile/dance.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
 .newspaper {
-  background: url(../assets/images/newspaper.png);
+  background: url(../assets/desktop/newspaper.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,8 +466,30 @@
   height: 100vh;
 }
 
+@media (max-width: 480px) {
+  .newspaper {
+    background: url(../assets/mobile/newspaper.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .newspaper {
+    background: url(../assets/desktop/newspaper.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
 .television {
-  background: url(../assets/images/television.png);
+  background: url(../assets/desktop/television.png);
   background-position: center 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,8 +497,19 @@
   height: 100vh;
 }
 
+@media (max-width: 480px) {
+  .television {
+    background: url(../assets/mobile/television.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
 .computer {
-  background: url(../assets/images/computer.png);
+  background: url(../assets/desktop/computer.png);
   background-position: center 40%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,8 +517,15 @@
   height: 100vh;
 }
 
-body {
-  height: 100vh;
+@media (max-width: 480px) {
+  .computer {
+    background: url(../assets/mobile/computer.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .bbody {
@@ -309,38 +536,15 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  font-family: "Kaushan Script", cursive;
 }
 
 .bbody h1 {
-  font-size: 3rem;
-  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
+  font-family: "Kaushan Script", cursive;
   color: black;
   font-weight: bold;
   text-align: center;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .btn-glow {
@@ -355,7 +559,6 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 56px;
-  letter-spacing: 0.07em;
   text-decoration: none !important;
   text-transform: uppercase;
   padding: 0 30px;
@@ -371,15 +574,15 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Luckiest Guy", cursive;
   border-radius: 0.5em;
 }
 
 .btn-glow:hover {
   -webkit-box-shadow: 0 0 0 10px #3daaa200;
           box-shadow: 0 0 0 10px #3daaa200;
-  transition: .8s;
-  -webkit-transition: .8s;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
 }
 
 @-webkit-keyframes glow {
@@ -423,7 +626,7 @@ body {
 }
 
 .btn-hover-shine:after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   top: 0;
@@ -431,16 +634,16 @@ body {
   right: 80%;
   width: 1px;
   background-color: #ffffff00;
-  -webkit-box-shadow: 0 0 20px #ffd2fe00, 0 0 10px #ffd2fe00, 0 0 5px #ffd2fe00, 0 0 2px #ffd2fe00;
-          box-shadow: 0 0 20px #ffd2fe00, 0 0 10px #ffd2fe00, 0 0 5px #ffd2fe00, 0 0 2px #ffd2fe00;
+  -webkit-box-shadow: 0 0 20px #ffd2fe00, 0 0 10px #ffd2fe00, 0 0 5px #ffd2fe00, 0 0 2px #ffd2fe00;
+          box-shadow: 0 0 20px #ffd2fe00, 0 0 10px #ffd2fe00, 0 0 5px #ffd2fe00, 0 0 2px #ffd2fe00;
   opacity: 1;
 }
 
 .btn-hover-shine:hover:after {
   right: 2%;
   background-color: #ffffffff;
-  -webkit-box-shadow: 0 0 30px #ffd2feff, 0 0 15px #ffd2feff, 0 0 7px #ffd2feff, 0 0 3px #ffd2feff;
-          box-shadow: 0 0 30px #ffd2feff, 0 0 15px #ffd2feff, 0 0 7px #ffd2feff, 0 0 3px #ffd2feff;
+  -webkit-box-shadow: 0 0 30px #ffd2feff, 0 0 15px #ffd2feff, 0 0 7px #ffd2feff, 0 0 3px #ffd2feff;
+          box-shadow: 0 0 30px #ffd2feff, 0 0 15px #ffd2feff, 0 0 7px #ffd2feff, 0 0 3px #ffd2feff;
   opacity: 0;
   transition: 0.6s;
   -webkit-transition: 0.6s;

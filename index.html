@@ -5,44 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheet/stylesheet.css" />
-    <title>PS responsive</title>
+    <title>P..S responsive</title>
   </head>
   <body>
-    <div style="position: relative;" class="caveman reveal showup">
+
+    
+    <section style="position: relative;" class="caveman reveal showup">
       <div>
-        <img class="title" src="./assets/images/title.jpeg" alt="">
+        <img class="title" src="./assets/desktop/title.jpeg" alt="">
       </div>
       <div class="bg-colored"
-      style="position: absolute; transform: translate(-50%,-50%); left:50%; bottom: 10%;"
-      ></div>
+      style="position: absolute; transform: translate(-50%,-50%); left:50%; bottom: 10%;">
     </div>
-    <div style="position: relative;" class="village reveal showup">
+        <img class='bird'  src="./assets/bird-new.gif" alt="">
+        <img class="branch" src="./assets/mobile/branch.PNG" alt="">
+        <img class="branchtop" src="./assets/mobile/branchtop.PNG" alt="">
+        <img class="nest" src="./assets/mobile/nest.PNG" alt="">
+        <img class="mute" src="./media/mute.jpeg" id="cavemanIcon" alt="">
+    <audio id="caveman-music" autoplay muted>
+      <source src="./media/caveman.mp3" type="audio/mp3">
+    </audio>
+    </section>
+
+    
+    <section style="position: relative;" class="village reveal showup">
+      <div class="hide">
       <div class="bg-colored bg-colored-village" 
       style="position: absolute; transform: translate(-50%,-50%); left: 50%; top: 10%;"></div>
-
     </div>
-    <div style="position: relative;" class="dance reveal showup">
+    <audio id="village-music" autoplay loop muted>
+      <source src="./media/village.mp3" type="audio/mp3">
+    </audio>
+  </section>
+
+
+    <section style="position: relative;" class="dance reveal showup">
       <div class="bg-colored bg-colored-dance" 
       style="position: absolute; transform: translate(-50%,-50%); left: 50%; top: 10%;"></div>
-    </div>
-    <div style="position: relative;" class="newspaper reveal showup">
+      <audio id="dance-music" autoplay loop muted>
+        <source src="./media/dance.mp3" type="audio/mp3">
+      </audio>
+    </section>
+
+
+    <section style="position: relative;" class="newspaper reveal showup">
         <div class="bg-colored bg-colored-newspaper" 
-        style="position: absolute; transform: translate(-50%,-50%); left: 50%; bottom: 10%;"></div>
+        style="position: absolute; transform: translate(-50%,-50%); left: 50%; top: 10%;"></div>
       </div>
-    </div>
-    <div style="position: relative;" class="television reveal showup">
+      <audio id="newspaper-music" autoplay loop muted>
+        <source src="./media/newspaper.mp3" type="audio/mp3">
+      </audio>
+    </section>
+
+
+    <section style="position: relative;" class="television reveal showup">
         <div class="bg-colored bg-colored-television" 
-        style="position: absolute; transform: translate(-50%,-50%); left: 50%; bottom: 10%;"></div>
+        style="position: absolute; transform: translate(-50%,-50%); left: 50%; top: 10%;"></div>
       </div>
-    </div>
-    <div style="position: relative;" class="computer reveal showup">
+      <audio id="television-music" autoplay loop muted>
+        <source src="./media/television.mp3" type="audio/mp3">
+      </audio>
+    </section>
+
+
+    <section style="position: relative;" class="computer reveal showup">
       <div class="bg-colored bg-colored-computer" 
-      style="position: absolute; transform: translate(-50%,-50%); left: 50%; bottom: 10%;"></div>
+      style="position: absolute; transform: translate(-50%,-50%); left: 50%; top: 10%;">
     </div>
-    </div>
-<div class="bbody">
+    <audio id="computer-music" autoplay loop muted>
+      <source src="./media/computer.mp3" type="audio/mp3">
+    </audio>
+    </section>
+
+    
+<footer class="bbody">
   <h1>Know more about us!</h1> 
-<a style="margin-bottom: 2em;" class="btn-glow btn-hover-shine">Click here!</a></div>
+<a style="margin-bottom: 2em; font-family: Kaushan Script, cursive;" class="btn-glow btn-hover-shine">Click here!
+</a>
+  </footer>
     <script src="./javascript/transition.js"></script>
   </body>
 </html>
