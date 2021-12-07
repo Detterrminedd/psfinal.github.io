@@ -8,57 +8,12 @@
 }
 
 .mute {
-  height: 50px;
-  width: 50px;
-  position: absolute;
+  width: 3em;
+  position: fixed;
   left: 0;
   bottom: 0;
   cursor: pointer;
-}
-
-.mute-village {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  cursor: pointer;
-}
-
-.mute-dance {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  cursor: pointer;
-}
-
-.mute-newspaper {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  cursor: pointer;
-}
-
-.mute-television {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  cursor: pointer;
-}
-
-.mute-computer {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  cursor: pointer;
+  z-index: 999;
 }
 
 .bg-colored {

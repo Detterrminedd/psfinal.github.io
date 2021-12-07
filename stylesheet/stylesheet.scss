@@ -8,64 +8,64 @@
 }
 
 .mute {
-  height: 50px;
-  width: 50px;
-  position: absolute;
+  // height: 5em;
+  width: 3em;
+  position: fixed;
   left: 0;
   bottom: 0;
-  // z-index: 5;
   cursor: pointer;
+  z-index: 999;
 }
 
-.mute-village {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  // z-index: 5;
-  cursor: pointer;
-}
+// .mute-village {
+//   height: 50px;
+//   width: 50px;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   // z-index: 5;
+//   cursor: pointer;
+// }
 
-.mute-dance {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  // z-index: 5;
-  cursor: pointer;
-}
+// .mute-dance {
+//   height: 50px;
+//   width: 50px;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   // z-index: 5;
+//   cursor: pointer;
+// }
 
-.mute-newspaper {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  // z-index: 5;
-  cursor: pointer;
-}
+// .mute-newspaper {
+//   height: 50px;
+//   width: 50px;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   // z-index: 5;
+//   cursor: pointer;
+// }
 
-.mute-television {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  // z-index: 5;
-  cursor: pointer;
-}
+// .mute-television {
+//   height: 50px;
+//   width: 50px;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   // z-index: 5;
+//   cursor: pointer;
+// }
 
-.mute-computer {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  // z-index: 5;
-  cursor: pointer;
-}
+// .mute-computer {
+//   height: 50px;
+//   width: 50px;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   // z-index: 5;
+//   cursor: pointer;
+// }
 
 .bg-colored {
   color: aliceblue;
@@ -340,6 +340,7 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
+  
   @media (max-width: 480px) {
     background: url(../assets/mobile/village.jpeg);
     background-position: center bottom;
